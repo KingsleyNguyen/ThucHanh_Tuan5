@@ -1,0 +1,61 @@
+
+.modal-header{
+    position:relative;
+    background-color:#ffffff;
+    border-radius:3px;
+    border:none;
+    .modal-first{
+        text-align:center;
+        font-family:$font-primary;
+        font-size:$fontsize-24;
+    } 
+    .modal-close{
+    position:absolute;
+    top:2px;
+    right:5px;
+    font-size:$fontsize-18;
+    color:#7d7d7d;    
+    }
+    h4{
+        margin:0px;
+        padding-top:20px;
+    }
+    padding-bottom:10px;
+    padding-top:10px;
+}
+#popupwindow{
+    padding-right:0px;
+    body{
+        padding:0px;
+    }
+}
+.modal-dialog{
+    position:relative;
+    top:20%;
+}
+.form-group{
+    .col-sm-10{
+        margin-left:45px;
+    }
+}
+.forgot{
+    padding-right:70px;
+}
+.button-signin{
+    border-radius:0px;
+    color:white;
+    background-color:#bbbbbb;
+    box-shadow:none;
+    margin-left:45px;
+    padding:10px 30px;
+    font-family:$font-primary;
+    font-size:$fontsize-14;
+    margin-bottom:20px;
+}
+.modal-body{
+    padding-bottom:0px;
+}
+.modal-footer{
+    border:none;
+    padding-top:0px;
+}

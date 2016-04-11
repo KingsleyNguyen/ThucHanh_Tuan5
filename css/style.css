@@ -1,0 +1,799 @@
+/* fonts */
+@import url(../vendor/bootstrap/css/bootstrap.css);
+@import url(../vendor/fonts/font-awesome/css/font-awesome.css);
+@import url(../vendor/fonts/opensans/stylesheet.css);
+@import url(../vendor/owlcarousel/owl.carousel.css);
+@import url(../vendor/fonts/titillium-web/stylesheet.css);
+/*------------------------------------------------------------------
+CSS
+-------------------------------------------------------------------*/
+/*------------------------------------------------------------------
+[1. Body]
+*/
+/* Typography */
+img {
+  width: 100%;
+  height: auto; }
+
+body {
+  position: relative;
+  padding: 0px;
+  margin: 0px; }
+
+a:focus {
+  outline: none; }
+
+img {
+  max-width: 100%;
+  height: auto; }
+
+.form-text, .form-select, .form-textarea {
+  border: 1px solid #d1d1d1;
+  padding: 10px; }
+
+a {
+  padding: 0px;
+  margin: 0px; }
+
+.header {
+  background-color: #2E2E3B; }
+  .header .logo {
+    padding-top: 13px;
+    padding-bottom: 13px; }
+    .header .logo p {
+      font-family: "titillium_webbold";
+      font-size: 1.285em;
+      background-color: #d83737;
+      color: #fff;
+      margin: 0px;
+      padding: 5px;
+      padding-top: 0px; }
+  .header .container nav ul {
+    padding-top: 4px; }
+    .header .container nav ul li a {
+      font-family: "titillium_webregular";
+      color: #fff; }
+      .header .container nav ul li a:hover {
+        background: none;
+        color: red; }
+      .header .container nav ul li a:focus {
+        background: none;
+        border: none; }
+
+.footer {
+  background-color: #232331;
+  margin-top: 30px; }
+  .footer .container {
+    padding-top: 30px; }
+  .footer h3 {
+    font-family: "titillium_websemibold";
+    font-size: 1.428em;
+    color: #bbbbbb;
+    padding-bottom: 20px; }
+  .footer p {
+    font-family: "titillium_websemibold";
+    font-size: 1em;
+    color: #57576e; }
+  .footer .txtemail {
+    border-radius: 0px;
+    font-family: "titillium_websemibold";
+    font-size: 1em;
+    position: relative;
+    background-color: #1f1f2d;
+    border: 1px solid #31313e; }
+  .footer .btn {
+    margin-top: -35px;
+    position: absolute;
+    right: 15px; }
+    .footer .btn:focus {
+      outline: none; }
+    .footer .btn:hover i {
+      color: red; }
+    .footer .btn i {
+      font-size: 1.071em;
+      color: #31313e; }
+
+.slogan {
+  border-top: 1px solid #57576e;
+  background-color: #232331; }
+  .slogan .container {
+    padding-top: 10px;
+    text-align: center;
+    padding-bottom: 10px; }
+  .slogan span {
+    font-family: "titillium_webregular";
+    font-size: 1.071em;
+    color: #57576e;
+    padding-top: 10px;
+    text-align: center; }
+  .slogan .slogan-name {
+    color: #ffffff; }
+
+.modal-header {
+  position: relative;
+  background-color: #ffffff;
+  border-radius: 3px;
+  border: none;
+  padding-bottom: 10px;
+  padding-top: 10px; }
+  .modal-header .modal-first {
+    text-align: center;
+    font-family: "titillium_websemibold";
+    font-size: 1.714em; }
+  .modal-header .modal-close {
+    position: absolute;
+    top: 2px;
+    right: 5px;
+    font-size: 1.285em;
+    color: #7d7d7d; }
+  .modal-header h4 {
+    margin: 0px;
+    padding-top: 20px; }
+
+#popupwindow {
+  padding-right: 0px; }
+  #popupwindow body {
+    padding: 0px; }
+
+.modal-dialog {
+  position: relative;
+  top: 20%; }
+
+.form-group .col-sm-10 {
+  margin-left: 45px; }
+
+.forgot {
+  padding-right: 70px; }
+
+.button-signin {
+  border-radius: 0px;
+  color: white;
+  background-color: #bbbbbb;
+  box-shadow: none;
+  margin-left: 45px;
+  padding: 10px 30px;
+  font-family: "titillium_websemibold";
+  font-size: 1em;
+  margin-bottom: 20px; }
+
+.modal-body {
+  padding-bottom: 0px; }
+
+.modal-footer {
+  border: none;
+  padding-top: 0px; }
+
+.media-left {
+  float: left; }
+
+.slideshow {
+  position: relative; }
+  .slideshow .carousel-inner .qc {
+    margin: 0px;
+    padding: 0px; }
+  .slideshow .carousel-inner .carousel-caption {
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    max-width: 1140px;
+    margin-left: -570px; }
+    .slideshow .carousel-inner .carousel-caption h1 {
+      padding-top: 10px;
+      text-align: left;
+      font-family: "titillium_websemibold";
+      font-size: 2.857em;
+      color: #fff; }
+    .slideshow .carousel-inner .carousel-caption p {
+      text-align: left;
+      font-family: "titillium_websemibold";
+      font-size: 1em;
+      color: #fff;
+      padding: 3px;
+      margin: 0px;
+      text-shadow: none; }
+    .slideshow .carousel-inner .carousel-caption a {
+      padding: 15px 45px;
+      background-color: #BBBBBB;
+      font-family: "titillium_websemibold";
+      font-size: 1em;
+      color: #fff; }
+      .slideshow .carousel-inner .carousel-caption a:hover {
+        text-decoration: none;
+        color: red;
+        background-color: black; }
+    .slideshow .carousel-inner .carousel-caption .sale {
+      font-family: "titillium_websemibold";
+      font-size: 30px;
+      color: #d83737; }
+  .slideshow .btn-left {
+    max-width: 1140px;
+    position: absolute;
+    left: 50%;
+    margin-left: -678px;
+    top: 45%; }
+  .slideshow .btn-right {
+    max-width: 1140px;
+    position: absolute;
+    right: 50%;
+    margin-right: -540px;
+    top: 45%; }
+  .slideshow .left.carousel-control {
+    height: 32px;
+    width: 32px;
+    position: absolute;
+    left: 0px;
+    background: none;
+    border-radius: 360px;
+    border: 2px solid #b4b4b4;
+    margin-left: 50px;
+    text-shadow: none; }
+    .slideshow .left.carousel-control:hover {
+      background: none;
+      border: 2px solid #ff2525;
+      color: #ff2525; }
+    .slideshow .left.carousel-control .fa.fa-angle-left {
+      font-size: 1.142em;
+      padding-right: 5px;
+      padding-bottom: 2px;
+      text-shadow: none; }
+  .slideshow .right.carousel-control {
+    height: 32px;
+    width: 32px;
+    position: absolute;
+    right: 0px;
+    background: none;
+    border-radius: 360px;
+    border: 2px solid #b4b4b4;
+    margin-right: 50px;
+    text-shadow: none; }
+    .slideshow .right.carousel-control .fa.fa-angle-right {
+      font-size: 1.285em;
+      padding-left: 2px;
+      padding-bottom: 5px;
+      color: #b4b4b4;
+      text-shadow: none; }
+    .slideshow .right.carousel-control:hover {
+      border: 2px solid #ff2525;
+      color: #ff2525; }
+      .slideshow .right.carousel-control:hover .fa.fa-angle-right {
+        color: #ff2525; }
+
+.textform {
+  background-color: #3a3a45;
+  padding-top: 35px;
+  padding-bottom: 35px;
+  margin: 0px; }
+  .textform .container {
+    padding: 0px;
+    margin-bottom: 0px; }
+  .textform .carousel-generic1 {
+    width: 1119px; }
+  .textform .col-md-3 {
+    padding-bottom: 0px;
+    margin: 0px; }
+    .textform .col-md-3 .form-group input {
+      background-color: #262633;
+      border-radius: 0px;
+      border: none; }
+    .textform .col-md-3 .form-group-second input {
+      background-color: #262633;
+      border-radius: 0px;
+      border: none; }
+    .textform .col-md-3 .form-btn {
+      background-color: #d83737;
+      padding: 66px 50px;
+      margin-right: 25px;
+      margin-top: -35px;
+      margin-bottom: -35px;
+      border-radius: 0px;
+      color: white;
+      font-family: "titillium_websemibold";
+      font-size: 1.285em; }
+      .textform .col-md-3 .form-btn:hover {
+        background-color: #B02020; }
+      .textform .col-md-3 .form-btn:focus {
+        outline: none; }
+
+.slide {
+  background-color: #fafafa; }
+  .slide .container {
+    padding: 0px;
+    width: 1119px;
+    position: relative; }
+    .slide .container .col-md-10 {
+      padding-left: 0px; }
+    .slide .container h2 {
+      padding-top: 20px;
+      text-align: left;
+      font-family: "titillium_websemibold";
+      font-size: 2.142em;
+      color: #232331; }
+    .slide .container .slide-title {
+      text-align: center;
+      font-family: "titillium_websemibold";
+      font-size: 2.142em;
+      color: #000000;
+      padding-top: 40px;
+      padding-bottom: 40px; }
+    .slide .container .carousel-inner {
+      width: 1119px;
+      padding-left: 0px;
+      /*.over-image{
+      	position:relative;
+      	&:hover{
+      		.slide-btn{
+      			display: block;
+      		}
+      		a{
+      			img{
+      				opacity: 0.7;
+      			}
+      		}
+      	}
+      }*/ }
+      .slide .container .carousel-inner .item-first {
+        padding-left: 0px;
+        padding-right: 30px; }
+      .slide .container .carousel-inner .item-last {
+        padding-right: 0px;
+        padding-left: 30px; }
+      .slide .container .carousel-inner .item-second {
+        padding-bottom: 0px;
+        padding-left: 0px;
+        padding-right: 0px; }
+      .slide .container .carousel-inner .row {
+        margin: 15px;
+        margin-left: 3px;
+        margin-bottom: 0px; }
+      .slide .container .carousel-inner .over-image {
+        position: relative;
+        z-index: 1; }
+        .slide .container .carousel-inner .over-image:hover .slide-btn, .slide .container .carousel-inner .over-image:hover .col-md-4 .slide-btn1, .slide .container .carousel-inner .col-md-4 .over-image:hover .slide-btn1, .slide .container .carousel-inner .over-image:focus .slide-btn, .slide .container .carousel-inner .over-image:focus .col-md-4 .slide-btn1, .slide .container .carousel-inner .col-md-4 .over-image:focus .slide-btn1 {
+          display: block; }
+        .slide .container .carousel-inner .over-image:hover .image-slide, .slide .container .carousel-inner .over-image:focus .image-slide {
+          display: block; }
+          .slide .container .carousel-inner .over-image:hover .image-slide:before, .slide .container .carousel-inner .over-image:focus .image-slide:before {
+            content: "";
+            height: 100%;
+            width: 100%;
+            z-index: 2;
+            background-color: #232331;
+            opacity: 0.3;
+            position: absolute;
+            left: 0;
+            top: 0; }
+      .slide .container .carousel-inner .slide-btn, .slide .container .carousel-inner .col-md-4 .slide-btn1 {
+        display: none;
+        position: absolute;
+        color: #fff;
+        z-index: 5;
+        top: 80px;
+        right: 0px;
+        background-color: #d83737;
+        font-family: "titillium_websemibold";
+        font-size: 1.428em;
+        padding: 30px 15px;
+        text-transform: uppercase; }
+        .slide .container .carousel-inner .slide-btn:hover, .slide .container .carousel-inner .col-md-4 .slide-btn1:hover {
+          text-decoration: none;
+          background-color: #B02020; }
+      .slide .container .carousel-inner .col-md-4 .prices {
+        font-family: "titillium_webbold";
+        font-size: 1.428em;
+        color: #d83737;
+        padding-bottom: 40px; }
+      .slide .container .carousel-inner .col-md-4 img {
+        width: 370px;
+        height: 240px; }
+      .slide .container .carousel-inner .col-md-4 h2 {
+        font-family: "titillium_websemibold";
+        font-size: 2.142em;
+        color: #232331; }
+      .slide .container .carousel-inner .col-md-4 .col-md-2 {
+        padding: 0px; }
+        .slide .container .carousel-inner .col-md-4 .col-md-2 p {
+          font-family: "titillium_websemibold";
+          font-size: 1em;
+          color: #232331; }
+    .slide .container a.right.carousel-control {
+      text-shadow: none; }
+    .slide .container a.left.carousel-control {
+      text-shadow: none; }
+    .slide .container .left.carousel-control {
+      height: 32px;
+      width: 32px;
+      position: absolute;
+      left: 0px;
+      top: 240px;
+      background: none;
+      background-color: inherit;
+      border-radius: 360px;
+      border: 2px solid #b4b4b4;
+      margin-left: -55px; }
+      .slide .container .left.carousel-control .fa.fa-angle-left {
+        font-size: 1.285em;
+        padding-right: 5px;
+        padding-bottom: 2px;
+        color: #b4b4b4; }
+      .slide .container .left.carousel-control:hover {
+        border: 2px solid #ff2525;
+        color: #ff2525; }
+        .slide .container .left.carousel-control:hover .fa.fa-angle-left {
+          color: #ff2525; }
+    .slide .container .right.carousel-control {
+      height: 32px;
+      width: 32px;
+      position: absolute;
+      right: 0px;
+      top: 240px;
+      background: none;
+      background-color: inherit;
+      border-radius: 360px;
+      border: 2px solid #b4b4b4;
+      margin-right: -55px; }
+      .slide .container .right.carousel-control .fa.fa-angle-right {
+        font-size: 1.285em;
+        padding-left: 2px;
+        padding-bottom: 5px;
+        color: #b4b4b4; }
+      .slide .container .right.carousel-control:hover {
+        border: 2px solid #ff2525;
+        color: #ff2525; }
+        .slide .container .right.carousel-control:hover .fa.fa-angle-right {
+          color: #ff2525; }
+
+.option-group .container #Tab1 .col-md-3 a:hover {
+  text-decoration: none;
+  color: #800000; }
+.option-group .container .readmore {
+  margin-top: 40px;
+  display: block;
+  text-align: center; }
+  .option-group .container .readmore a {
+    width: 40px;
+    height: 40px;
+    border-radius: 360px;
+    border: 2px solid #888888;
+    padding: 3px 0px;
+    font-family: "titillium_websemibold"; }
+    .option-group .container .readmore a i {
+      font-size: 1.142em;
+      padding-right: 5px;
+      padding-bottom: 2px;
+      padding-left: 5px;
+      color: #888888; }
+  .option-group .container .readmore .showmore {
+    border: none;
+    padding-left: 5px;
+    color: #888888; }
+.option-group .container .tab-content {
+  margin-top: 40px;
+  margin-bottom: 80px; }
+  .option-group .container .tab-content h3 {
+    font-size: 1.285em;
+    font-family: "titillium_websemibold";
+    text-align: center;
+    padding-top: 5px; }
+.option-group .container ul {
+  border-bottom: 1 solid #e6e6e6;
+  padding: 0px 400px 0px 450px; }
+  .option-group .container ul .active {
+    border: none;
+    border-bottom: 4px solid #d83737; }
+    .option-group .container ul .active a {
+      color: #d83737; }
+      .option-group .container ul .active a:focus {
+        outline: none;
+        border: none; }
+  .option-group .container ul li a {
+    font-family: "titillium_webbold";
+    font-size: 1.428em;
+    border: none;
+    color: #232331; }
+    .option-group .container ul li a:hover {
+      outline: none;
+      border: none;
+      background: none; }
+
+.group-collapse {
+  background-color: #232331; }
+  .group-collapse .container {
+    padding-top: 40px; }
+    .group-collapse .container h2 {
+      font-family: "titillium_websemibold";
+      font-size: 2.142em;
+      color: #ffffff;
+      text-align: center;
+      text-transform: uppercase; }
+    .group-collapse .container .panel-default {
+      border: none;
+      border-radius: 0px;
+      margin: 0px; }
+      .group-collapse .container .panel-default .panel-body {
+        background-color: #232331;
+        border: none; }
+        .group-collapse .container .panel-default .panel-body p {
+          font-family: "titillium_webregular";
+          font-size: 1.071em;
+          color: #57576e;
+          margin-bottom: 3px; }
+  .group-collapse .panel-heading {
+    background: none;
+    background-color: #232331;
+    border-radius: 0px; }
+    .group-collapse .panel-heading a {
+      color: #fff;
+      font-family: "titillium_websemibold";
+      font-size: 1.428em;
+      padding-left: 5px; }
+      .group-collapse .panel-heading a:focus {
+        color: #d83737;
+        text-decoration: none;
+        outline: none; }
+        .group-collapse .panel-heading a:focus i {
+          color: #d83737;
+          border: 2px solid #d83737; }
+      .group-collapse .panel-heading a:hover {
+        text-decoration: none;
+        color: #d83737; }
+        .group-collapse .panel-heading a:hover i {
+          color: #d83737;
+          border: 2px solid #d83737; }
+      .group-collapse .panel-heading a i {
+        font-size: 0.857em;
+        padding-right: 5px;
+        padding-bottom: 2px;
+        padding-left: 5px;
+        color: #fff;
+        border-radius: 360px;
+        border: 2px solid #fff;
+        padding: 4px 4px 5px 4px; }
+
+.information .container {
+  margin-top: 40px; }
+.information .col-md-3 {
+  top: 26px; }
+.information .section-right {
+  border-left: 1px solid #e5e0e0; }
+  .information .section-right .title-content {
+    border: 1px solid #dddde2;
+    margin-bottom: 5px; }
+  .information .section-right .media {
+    margin-top: 10px;
+    margin-bottom: 10px; }
+  .information .section-right img {
+    margin-left: 10px; }
+.information .section-left .media-first {
+  margin-bottom: 40px; }
+.information .section-left img {
+  height: 210px;
+  width: 280px; }
+.information .col-md-6 h3 {
+  font-family: "titillium_websemibold";
+  font-size: 2.142em;
+  color: #232331; }
+.information .col-md-6 .seemore {
+  float: left;
+  font-family: "titillium_websemibold";
+  font-size: 1em;
+  color: #888888; }
+  .information .col-md-6 .seemore:hover {
+    border: none;
+    background: none;
+    outline: none;
+    color: red;
+    text-decoration: none; }
+    .information .col-md-6 .seemore:hover i {
+      color: red;
+      border: 2px solid red; }
+  .information .col-md-6 .seemore:focus {
+    border: none;
+    background: none;
+    outline: none; }
+  .information .col-md-6 .seemore i {
+    font-size: 0.857em;
+    padding-right: 5px;
+    padding-bottom: 2px;
+    padding-left: 5px;
+    color: #888888;
+    border-radius: 360px;
+    border: 2px solid #888888;
+    padding: 5px 6px 5px 7px;
+    font-size: 0.857em;
+    margin-right: 8px; }
+.information .content {
+  padding-left: 10px; }
+  .information .content h4 {
+    margin-bottom: 10px;
+    font-family: "titillium_websemibold";
+    font-size: 1.071em;
+    color: #3e3e48; }
+  .information .content p {
+    margin-bottom: 0px;
+    font-family: "titillium_webregular";
+    font-size: 1em;
+    color: #888888; }
+  .information .content h2 {
+    font-family: "titillium_websemibold";
+    font-size: 1.428em;
+    color: #d83737; }
+  .information .content a {
+    font-family: "titillium_websemibold";
+    font-size: 0.857em;
+    color: #9595a1;
+    padding: 0px 20px 1px 20px;
+    border: 1px solid #dddde2; }
+    .information .content a:hover {
+      text-decoration: none;
+      color: blue;
+      border: 1px solid blue; }
+  .information .content span {
+    padding-left: 4px;
+    color: #bbbbbb;
+    font-family: "titillium_websemibold";
+    font-size: 12px; }
+.information .star i {
+  font-size: 1.285em;
+  color: #ffdb69; }
+.information .title-content .col-md-4 {
+  position: relative; }
+  .information .title-content .col-md-4 .star {
+    position: absolute;
+    top: 10px;
+    right: 20px; }
+    .information .title-content .col-md-4 .star:hover {
+      outline: none; }
+      .information .title-content .col-md-4 .star:hover i {
+        color: yellow; }
+  .information .title-content .col-md-4 .review {
+    position: absolute;
+    right: 20px;
+    top: 30px;
+    font-family: "titillium_websemibold";
+    font-size: 0.857em;
+    color: #b5b5b5; }
+
+.tab-bottom {
+  background-image: url("../images/banner-2.png");
+  height: 500px;
+  background-color: #252531;
+  margin-top: 20px; }
+  .tab-bottom ul {
+    border: none; }
+  .tab-bottom .row {
+    margin: 0px; }
+  .tab-bottom .nav-tabs > li.active a {
+    background: none;
+    border: none; }
+    .tab-bottom .nav-tabs > li.active a:hover {
+      background: none; }
+  .tab-bottom .nav > li a {
+    background: none;
+    border: none;
+    text-decoration: none;
+    color: #57576e; }
+  .tab-bottom .number {
+    color: #57576e;
+    font-family: 'titillium_weblight';
+    font-size: 70px; }
+  .tab-bottom .col-md-4 {
+    top: -20px;
+    padding: 0px; }
+  .tab-bottom .col-md-8 {
+    padding: 0px; }
+    .tab-bottom .col-md-8 h4 {
+      font-family: "titillium_websemibold";
+      font-size: 1.428em; }
+  .tab-bottom .tag2 {
+    text-align: center;
+    margin-left: 490px; }
+  .tab-bottom .tag1 {
+    padding-left: 122px; }
+  .tab-bottom .tag3 {
+    margin-right: 62px; }
+  .tab-bottom li {
+    width: 365px;
+    height: auto;
+    background: none; }
+  .tab-bottom .container {
+    padding-top: 30px; }
+  .tab-bottom h2 {
+    font-family: "titillium_websemibold";
+    font-size: 2.142em;
+    color: #ffffff;
+    text-align: center;
+    padding-top: 30px; }
+  .tab-bottom .overtab {
+    margin-top: 60px; }
+  .tab-bottom .active {
+    background: none; }
+    .tab-bottom .active h4 {
+      color: #d83737; }
+    .tab-bottom .active .content {
+      color: #57576e;
+      font-family: "titillium_webregular";
+      font-size: 1em;
+      border-bottom: 1px solid #57576e; }
+      .tab-bottom .active .content:last-child {
+        border: none; }
+    .tab-bottom .active .title {
+      color: white;
+      font-family: "titillium_websemibold";
+      font-size: 1em; }
+    .tab-bottom .active .number {
+      color: #d83737; }
+  .tab-bottom .content {
+    width: 220px;
+    text-align: left;
+    padding-bottom: 7px;
+    padding-top: 7px;
+    margin-bottom: 0px; }
+
+.information-contact {
+  background-color: #fafafa; }
+  .information-contact .container {
+    padding-top: 40px; }
+  .information-contact .information-over {
+    margin-left: 16px; }
+  .information-contact .col-md-4 {
+    font-family: "titillium_websemibold";
+    font-size: 1.071em;
+    color: #232331;
+    padding-left: 35px; }
+    .information-contact .col-md-4 .col-md-10 {
+      padding: 0px; }
+  .information-contact .form-group .form-control {
+    border-radius: 0px;
+    font-family: "titillium_webregular";
+    font-size: 1em; }
+  .information-contact .discription .form-control {
+    border-radius: 0px;
+    font-family: "titillium_webregular";
+    font-size: 1em; }
+  .information-contact .col-md-8 {
+    padding-left: 100px; }
+  .information-contact .button-bottom {
+    margin-top: 10px;
+    background-color: #d83737;
+    padding: 30px 25px;
+    border-radius: 0px;
+    color: white;
+    font-family: "titillium_websemibold";
+    font-size: 1.285em; }
+    .information-contact .button-bottom:hover {
+      background-color: #B02020; }
+
+.form-toolbar {
+  position: fixed;
+  z-index: 999;
+  top: 35%;
+  right: 0px; }
+  .form-toolbar li {
+    margin-bottom: 5px; }
+    .form-toolbar li:hover a {
+      background-color: #000; }
+      .form-toolbar li:hover a i {
+        color: #c8060c; }
+    .form-toolbar li .toolbar-signin, .form-toolbar li .toolbar-desktop, .form-toolbar li .toolbar-phone, .form-toolbar li .toolbar-review {
+      width: 50px;
+      height: 50px;
+      border-radius: 360px;
+      background-color: #232331;
+      padding: 15px 12px 10px 20px;
+      top: 0px; }
+      .form-toolbar li .toolbar-signin i, .form-toolbar li .toolbar-desktop i, .form-toolbar li .toolbar-phone i, .form-toolbar li .toolbar-review i {
+        font-size: 1em;
+        color: #fff;
+        line-height: 14px;
+        width: 14px;
+        height: 14px; }
+    .form-toolbar li .toolbar-desktop {
+      padding: 15px 15px 8px 18px; }
+    .form-toolbar li .toolbar-phone {
+      padding: 17px 10px 6px 20px; }
+      .form-toolbar li .toolbar-phone i {
+        font-size: 1.714em; }
+    .form-toolbar li .toolbar-review {
+      padding: 12px 12px 10px 18px; }
+
+/*# sourceMappingURL=style.css.map */

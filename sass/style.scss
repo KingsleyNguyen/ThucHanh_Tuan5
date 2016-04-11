@@ -1,0 +1,29 @@
+/* fonts */
+@import url(../vendor/bootstrap/css/bootstrap.css);
+@import url(../vendor/fonts/font-awesome/css/font-awesome.css);
+@import url(../vendor/fonts/opensans/stylesheet.css);
+@import url(../vendor/owlcarousel/owl.carousel.css);
+@import url(../vendor/fonts/titillium-web/stylesheet.css);
+
+/*------------------------------------------------------------------
+CSS
+-------------------------------------------------------------------*/
+
+// Core variables and mixins
+@import "config/mixins";
+@import "config/variables";
+
+// Base
+@import "base/base";
+@import "base/header";
+@import "base/footer";
+
+// Partials
+@import "partials/elements";
+@import "partials/common";
+@import "partials/block";
+@import "partials/view";
+@import "partials/page";
+@import "partials/form";
+@import "partials/responsive";
+

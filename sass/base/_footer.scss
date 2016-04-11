@@ -1,0 +1,64 @@
+.footer{
+	background-color:#232331;
+	margin-top:30px;
+	.container{
+		padding-top:30px;
+	}
+	h3{
+		font-family:$font-primary;
+		font-size:$fontsize-20;
+		color:#bbbbbb;
+		padding-bottom:20px;
+	}
+	p{
+		font-family:$font-primary;
+		font-size:$fontsize-14;
+		color:#57576e;		
+	}
+	.txtemail{
+		border-radius:0px;
+		font-family:$font-primary;
+		font-size:$fontsize-14;
+		position:relative;
+		background-color:#1f1f2d;
+		border:1px solid #31313e;
+	}
+	.btn{
+		margin-top:-35px;
+		position:absolute;
+		right:15px;
+		&:focus{
+			outline:none;
+		}
+		&:hover{
+			i{
+				color:red;
+			}
+		}
+		i{
+			font-size:$fontsize-15;
+			color: #31313e;
+
+		}
+	}
+
+}
+.slogan{
+	border-top:1px solid #57576e;
+	background-color:#232331;
+	.container{
+		padding-top:10px;
+		text-align:center;
+		padding-bottom:10px;		
+	}
+	span{
+		font-family:$font-third;
+		font-size:$fontsize-15;
+		color:#57576e;
+		padding-top:10px;
+		text-align:center;
+	}
+	.slogan-name{
+		color:#ffffff;
+	}
+}

@@ -1,0 +1,33 @@
+/*------------------------------------------------------------------
+[1. Body]
+*/
+/* Typography */
+
+img{
+	width:100%;
+	height:auto;
+}
+body{
+	position:relative;
+	padding:0px;
+	margin:0px;
+}
+a{
+	&:focus{
+		outline:none;
+	}
+}
+
+img{
+	max-width: 100%;
+	height: auto;
+}
+
+.form-text, .form-select, .form-textarea{
+	border: 1px solid #d1d1d1;
+	padding: 10px;
+}
+a{
+	padding:0px;
+	margin:0px;
+}
