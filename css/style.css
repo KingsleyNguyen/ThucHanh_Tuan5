@@ -729,6 +729,39 @@ a {
     padding-top: 7px;
     margin-bottom: 0px; }
 
+.form-toolbar {
+  position: fixed;
+  z-index: 999;
+  top: 35%;
+  right: 0px; }
+  .form-toolbar li {
+    margin-bottom: 5px; }
+    .form-toolbar li:hover a {
+      background-color: #000; }
+      .form-toolbar li:hover a i {
+        color: #c8060c; }
+    .form-toolbar li .toolbar-signin, .form-toolbar li .toolbar-desktop, .form-toolbar li .toolbar-phone, .form-toolbar li .toolbar-review {
+      width: 50px;
+      height: 50px;
+      border-radius: 360px;
+      background-color: #232331;
+      padding: 15px 12px 10px 20px;
+      top: 0px; }
+      .form-toolbar li .toolbar-signin i, .form-toolbar li .toolbar-desktop i, .form-toolbar li .toolbar-phone i, .form-toolbar li .toolbar-review i {
+        font-size: 1em;
+        color: #fff;
+        line-height: 14px;
+        width: 14px;
+        height: 14px; }
+    .form-toolbar li .toolbar-desktop {
+      padding: 15px 15px 8px 18px; }
+    .form-toolbar li .toolbar-phone {
+      padding: 17px 10px 6px 20px; }
+      .form-toolbar li .toolbar-phone i {
+        font-size: 1.714em; }
+    .form-toolbar li .toolbar-review {
+      padding: 12px 12px 10px 18px; }
+
 .information-contact {
   background-color: #fafafa; }
   .information-contact .container {
@@ -762,38 +795,5 @@ a {
     font-size: 1.285em; }
     .information-contact .button-bottom:hover {
       background-color: #B02020; }
-
-.form-toolbar {
-  position: fixed;
-  z-index: 999;
-  top: 35%;
-  right: 0px; }
-  .form-toolbar li {
-    margin-bottom: 5px; }
-    .form-toolbar li:hover a {
-      background-color: #000; }
-      .form-toolbar li:hover a i {
-        color: #c8060c; }
-    .form-toolbar li .toolbar-signin, .form-toolbar li .toolbar-desktop, .form-toolbar li .toolbar-phone, .form-toolbar li .toolbar-review {
-      width: 50px;
-      height: 50px;
-      border-radius: 360px;
-      background-color: #232331;
-      padding: 15px 12px 10px 20px;
-      top: 0px; }
-      .form-toolbar li .toolbar-signin i, .form-toolbar li .toolbar-desktop i, .form-toolbar li .toolbar-phone i, .form-toolbar li .toolbar-review i {
-        font-size: 1em;
-        color: #fff;
-        line-height: 14px;
-        width: 14px;
-        height: 14px; }
-    .form-toolbar li .toolbar-desktop {
-      padding: 15px 15px 8px 18px; }
-    .form-toolbar li .toolbar-phone {
-      padding: 17px 10px 6px 20px; }
-      .form-toolbar li .toolbar-phone i {
-        font-size: 1.714em; }
-    .form-toolbar li .toolbar-review {
-      padding: 12px 12px 10px 18px; }
 
 /*# sourceMappingURL=style.css.map */
