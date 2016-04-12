@@ -1,5 +1,14 @@
 .header{
   background-color: #2E2E3B;
+  position:fixed;
+  top:0px;
+  z-index: 9999;
+  left:0px;
+  right:0px;
+  .container{
+  	padding-top:9px;
+  	padding-bottom:9px;
+  }
    .logo{
       padding-top:13px;
       padding-bottom:13px;
@@ -9,29 +18,27 @@
          background-color:#d83737;
          color:#fff;
          margin:0px;
-         padding:5px;
-         padding-top:0px;
+         padding: 4px 17px 6px 17px;
       }
    }
-   .container{
-   		nav{
-   			ul{
-   				padding-top:4px;
-   				li{
-   					a{
-   						font-family:$font-third;
-   						color:#fff;
-   						&:hover{
-   							background:none;
-   							color:red;
-   						}
-   						&:focus{
-   							background:none;
-   							border:none;
-   						}
-   					}
-   				}
-   			}
-   		}
-   }
+
+	ul{
+		padding-top:4px;
+		li{
+			a{
+            padding-left:19px;
+				font-family:$font-third;
+				color:#fff;
+				font-size:$fontsize-16;
+				&:hover{
+					background:none;
+					color:red;
+				}
+				&:focus{
+					background:none;
+					border:none;
+				}
+			}
+		}
+	}
 }

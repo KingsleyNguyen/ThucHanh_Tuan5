@@ -36,7 +36,15 @@ a {
   margin: 0px; }
 
 .header {
-  background-color: #2E2E3B; }
+  background-color: #2E2E3B;
+  position: fixed;
+  top: 0px;
+  z-index: 9999;
+  left: 0px;
+  right: 0px; }
+  .header .container {
+    padding-top: 9px;
+    padding-bottom: 9px; }
   .header .logo {
     padding-top: 13px;
     padding-bottom: 13px; }
@@ -46,17 +54,18 @@ a {
       background-color: #d83737;
       color: #fff;
       margin: 0px;
-      padding: 5px;
-      padding-top: 0px; }
-  .header .container nav ul {
+      padding: 4px 17px 6px 17px; }
+  .header ul {
     padding-top: 4px; }
-    .header .container nav ul li a {
+    .header ul li a {
+      padding-left: 19px;
       font-family: "titillium_webregular";
-      color: #fff; }
-      .header .container nav ul li a:hover {
+      color: #fff;
+      font-size: 1.142em; }
+      .header ul li a:hover {
         background: none;
         color: red; }
-      .header .container nav ul li a:focus {
+      .header ul li a:focus {
         background: none;
         border: none; }
 
@@ -64,16 +73,20 @@ a {
   background-color: #232331;
   margin-top: 30px; }
   .footer .container {
-    padding-top: 30px; }
+    padding-top: 60px;
+    padding-bottom: 60px; }
   .footer h3 {
     font-family: "titillium_websemibold";
     font-size: 1.428em;
     color: #bbbbbb;
-    padding-bottom: 20px; }
+    padding-bottom: 20px;
+    margin-bottom: 53px; }
   .footer p {
     font-family: "titillium_websemibold";
     font-size: 1em;
     color: #57576e; }
+  .footer .form-group {
+    margin-top: 32px; }
   .footer .txtemail {
     border-radius: 0px;
     font-family: "titillium_websemibold";
@@ -81,6 +94,8 @@ a {
     position: relative;
     background-color: #1f1f2d;
     border: 1px solid #31313e; }
+    .footer .txtemail:hover {
+      box-shadow: none; }
   .footer .btn {
     margin-top: -35px;
     position: absolute;
@@ -97,9 +112,9 @@ a {
   border-top: 1px solid #57576e;
   background-color: #232331; }
   .slogan .container {
-    padding-top: 10px;
+    padding-top: 28px;
     text-align: center;
-    padding-bottom: 10px; }
+    padding-bottom: 28px; }
   .slogan span {
     font-family: "titillium_webregular";
     font-size: 1.071em;
@@ -167,22 +182,38 @@ a {
   float: left; }
 
 .slideshow {
-  position: relative; }
-  .slideshow .carousel-inner .qc {
-    margin: 0px;
+  margin-top: 79px; }
+  .slideshow .item {
+    text-align: center; }
+  .slideshow .container-fluid {
     padding: 0px; }
+  .slideshow .carousel-inner .qc {
+    margin: 0px auto;
+    padding: 0px;
+    position: relative; }
+    .slideshow .carousel-inner .qc img {
+      min-height: 550px;
+      max-width: inherit;
+      width: auto;
+      display: inline-block; }
   .slideshow .carousel-inner .carousel-caption {
+    height: auto;
     position: absolute;
-    top: 0px;
     left: 50%;
     max-width: 1140px;
-    margin-left: -570px; }
+    margin-left: -570px;
+    width: 300px;
+    padding: 0px;
+    top: 50%;
+    margin-top: -112px;
+    bottom: 0px; }
     .slideshow .carousel-inner .carousel-caption h1 {
-      padding-top: 10px;
+      margin-top: 0px;
       text-align: left;
       font-family: "titillium_websemibold";
       font-size: 2.857em;
-      color: #fff; }
+      color: #fff;
+      margin-bottom: 20px; }
     .slideshow .carousel-inner .carousel-caption p {
       text-align: left;
       font-family: "titillium_websemibold";
@@ -190,9 +221,10 @@ a {
       color: #fff;
       padding: 3px;
       margin: 0px;
-      text-shadow: none; }
+      text-shadow: none;
+      margin-bottom: 4px; }
     .slideshow .carousel-inner .carousel-caption a {
-      padding: 15px 45px;
+      padding: 14px 49px;
       background-color: #BBBBBB;
       font-family: "titillium_websemibold";
       font-size: 1em;
@@ -204,54 +236,57 @@ a {
     .slideshow .carousel-inner .carousel-caption .sale {
       font-family: "titillium_websemibold";
       font-size: 30px;
-      color: #d83737; }
+      color: #d83737;
+      margin-top: 17px;
+      margin-bottom: 10px; }
   .slideshow .btn-left {
     max-width: 1140px;
     position: absolute;
     left: 50%;
-    margin-left: -678px;
+    margin-left: -625px;
     top: 45%; }
   .slideshow .btn-right {
     max-width: 1140px;
     position: absolute;
     right: 50%;
-    margin-right: -540px;
+    margin-right: -600px;
     top: 45%; }
   .slideshow .left.carousel-control {
-    height: 32px;
-    width: 32px;
-    position: absolute;
-    left: 0px;
+    position: relative;
     background: none;
     border-radius: 360px;
     border: 2px solid #b4b4b4;
-    margin-left: 50px;
-    text-shadow: none; }
+    text-shadow: none;
+    padding-right: 24px; }
+    .slideshow .left.carousel-control .fa.fa-angle-left {
+      position: absolute;
+      font-size: 0.928em;
+      color: #b4b4b4;
+      text-shadow: none;
+      top: 0px;
+      right: 0px;
+      padding-right: 9px;
+      padding-top: 3px; }
     .slideshow .left.carousel-control:hover {
-      background: none;
       border: 2px solid #ff2525;
       color: #ff2525; }
-    .slideshow .left.carousel-control .fa.fa-angle-left {
-      font-size: 1.142em;
-      padding-right: 5px;
-      padding-bottom: 2px;
-      text-shadow: none; }
+      .slideshow .left.carousel-control:hover .fa.fa-angle-left {
+        color: #ff2525; }
   .slideshow .right.carousel-control {
-    height: 32px;
-    width: 32px;
-    position: absolute;
-    right: 0px;
+    position: relative;
     background: none;
     border-radius: 360px;
     border: 2px solid #b4b4b4;
-    margin-right: 50px;
-    text-shadow: none; }
+    text-shadow: none;
+    padding-left: 24px; }
     .slideshow .right.carousel-control .fa.fa-angle-right {
-      font-size: 1.285em;
-      padding-left: 2px;
-      padding-bottom: 5px;
+      position: absolute;
+      font-size: 0.928em;
       color: #b4b4b4;
-      text-shadow: none; }
+      text-shadow: none;
+      left: 7px;
+      right: 5px;
+      top: 3px; }
     .slideshow .right.carousel-control:hover {
       border: 2px solid #ff2525;
       color: #ff2525; }
@@ -261,7 +296,7 @@ a {
 .textform {
   background-color: #3a3a45;
   padding-top: 35px;
-  padding-bottom: 35px;
+  padding-bottom: 28px;
   margin: 0px; }
   .textform .container {
     padding: 0px;
@@ -270,21 +305,26 @@ a {
     width: 1119px; }
   .textform .col-md-3 {
     padding-bottom: 0px;
-    margin: 0px; }
+    margin: 0px;
+    margin-top: 5px;
+    margin-bottom: 9px; }
     .textform .col-md-3 .form-group input {
       background-color: #262633;
       border-radius: 0px;
-      border: none; }
+      border: none;
+      box-shadow: none;
+      margin-bottom: 11px; }
     .textform .col-md-3 .form-group-second input {
       background-color: #262633;
       border-radius: 0px;
-      border: none; }
+      border: none;
+      box-shadow: none; }
     .textform .col-md-3 .form-btn {
       background-color: #d83737;
-      padding: 66px 50px;
+      padding: 70px 50px;
       margin-right: 25px;
-      margin-top: -35px;
-      margin-bottom: -35px;
+      margin-top: -40px;
+      margin-bottom: -37px;
       border-radius: 0px;
       color: white;
       font-family: "titillium_websemibold";
@@ -299,11 +339,13 @@ a {
   .slide .container {
     padding: 0px;
     width: 1119px;
-    position: relative; }
+    position: relative;
+    padding-bottom: 24px; }
     .slide .container .col-md-10 {
       padding-left: 0px; }
     .slide .container h2 {
-      padding-top: 20px;
+      margin-top: 17px;
+      padding-bottom: 4px;
       text-align: left;
       font-family: "titillium_websemibold";
       font-size: 2.142em;
@@ -340,7 +382,7 @@ a {
       .slide .container .carousel-inner .item-second {
         padding-bottom: 0px;
         padding-left: 0px;
-        padding-right: 0px; }
+        padding-right: 3px; }
       .slide .container .carousel-inner .row {
         margin: 15px;
         margin-left: 3px;
@@ -358,12 +400,11 @@ a {
             width: 100%;
             z-index: 2;
             background-color: #232331;
-            opacity: 0.3;
+            opacity: 0.9;
             position: absolute;
             left: 0;
             top: 0; }
       .slide .container .carousel-inner .slide-btn, .slide .container .carousel-inner .col-md-4 .slide-btn1 {
-        display: none;
         position: absolute;
         color: #fff;
         z-index: 5;
@@ -371,8 +412,8 @@ a {
         right: 0px;
         background-color: #d83737;
         font-family: "titillium_websemibold";
-        font-size: 1.428em;
-        padding: 30px 15px;
+        font-size: 1.071em;
+        padding: 39px 24px;
         text-transform: uppercase; }
         .slide .container .carousel-inner .slide-btn:hover, .slide .container .carousel-inner .col-md-4 .slide-btn1:hover {
           text-decoration: none;
@@ -394,138 +435,171 @@ a {
         .slide .container .carousel-inner .col-md-4 .col-md-2 p {
           font-family: "titillium_websemibold";
           font-size: 1em;
-          color: #232331; }
+          color: #232331;
+          margin-bottom: 12px; }
+      .slide .container .carousel-inner .col-md-4 .col-md-10 p {
+        margin-bottom: 12px; }
     .slide .container a.right.carousel-control {
       text-shadow: none; }
     .slide .container a.left.carousel-control {
       text-shadow: none; }
-    .slide .container .left.carousel-control {
-      height: 32px;
-      width: 32px;
+    .slide .container .btn-left {
+      max-width: 1140px;
       position: absolute;
-      left: 0px;
-      top: 240px;
+      left: 50%;
+      margin-left: -617px;
+      top: 38%; }
+    .slide .container .btn-right {
+      max-width: 1140px;
+      position: absolute;
+      right: 50%;
+      margin-right: -618px;
+      top: 38%; }
+    .slide .container .left.carousel-control {
+      position: relative;
       background: none;
-      background-color: inherit;
       border-radius: 360px;
       border: 2px solid #b4b4b4;
-      margin-left: -55px; }
+      text-shadow: none;
+      padding-right: 24px; }
       .slide .container .left.carousel-control .fa.fa-angle-left {
-        font-size: 1.285em;
-        padding-right: 5px;
-        padding-bottom: 2px;
-        color: #b4b4b4; }
+        position: absolute;
+        font-size: 0.928em;
+        color: #b4b4b4;
+        text-shadow: none;
+        top: 0px;
+        right: 0px;
+        padding-right: 10px;
+        padding-top: 3px; }
       .slide .container .left.carousel-control:hover {
         border: 2px solid #ff2525;
         color: #ff2525; }
         .slide .container .left.carousel-control:hover .fa.fa-angle-left {
           color: #ff2525; }
     .slide .container .right.carousel-control {
-      height: 32px;
-      width: 32px;
-      position: absolute;
-      right: 0px;
-      top: 240px;
+      position: relative;
       background: none;
-      background-color: inherit;
       border-radius: 360px;
       border: 2px solid #b4b4b4;
-      margin-right: -55px; }
+      text-shadow: none;
+      padding-left: 24px; }
       .slide .container .right.carousel-control .fa.fa-angle-right {
-        font-size: 1.285em;
-        padding-left: 2px;
-        padding-bottom: 5px;
-        color: #b4b4b4; }
+        position: absolute;
+        font-size: 0.928em;
+        color: #b4b4b4;
+        text-shadow: none;
+        left: 7px;
+        right: 5px;
+        top: 2px;
+        padding-top: 1px;
+        padding-left: 1px; }
       .slide .container .right.carousel-control:hover {
         border: 2px solid #ff2525;
         color: #ff2525; }
         .slide .container .right.carousel-control:hover .fa.fa-angle-right {
           color: #ff2525; }
 
-.option-group .container #Tab1 .col-md-3 a:hover {
-  text-decoration: none;
-  color: #800000; }
-.option-group .container .readmore {
-  margin-top: 40px;
-  display: block;
-  text-align: center; }
-  .option-group .container .readmore a {
-    width: 40px;
-    height: 40px;
-    border-radius: 360px;
-    border: 2px solid #888888;
-    padding: 3px 0px;
-    font-family: "titillium_websemibold"; }
-    .option-group .container .readmore a i {
-      font-size: 1.142em;
-      padding-right: 5px;
-      padding-bottom: 2px;
+.option-group .container {
+  margin-top: 56px; }
+  .option-group .container #Tab1 .col-md-3 a:hover {
+    text-decoration: none;
+    color: #800000; }
+  .option-group .container .readmore {
+    margin-top: 52px;
+    display: block;
+    text-align: center; }
+    .option-group .container .readmore a {
+      width: 20px;
+      height: 20px;
+      border-radius: 360px;
+      border: 2px solid #888888;
+      font-family: "titillium_websemibold";
+      padding: 0px 1px 2px 1px; }
+      .option-group .container .readmore a i {
+        font-size: 0.857em;
+        color: #888888;
+        line-height: 12px;
+        padding: 0px 5px 5px 5px; }
+    .option-group .container .readmore .showmore {
+      border: none;
       padding-left: 5px;
       color: #888888; }
-  .option-group .container .readmore .showmore {
-    border: none;
-    padding-left: 5px;
-    color: #888888; }
-.option-group .container .tab-content {
-  margin-top: 40px;
-  margin-bottom: 80px; }
-  .option-group .container .tab-content h3 {
-    font-size: 1.285em;
-    font-family: "titillium_websemibold";
-    text-align: center;
-    padding-top: 5px; }
-.option-group .container ul {
-  border-bottom: 1 solid #e6e6e6;
-  padding: 0px 400px 0px 450px; }
-  .option-group .container ul .active {
-    border: none;
-    border-bottom: 4px solid #d83737; }
-    .option-group .container ul .active a {
-      color: #d83737; }
-      .option-group .container ul .active a:focus {
-        outline: none;
-        border: none; }
-  .option-group .container ul li a {
-    font-family: "titillium_webbold";
-    font-size: 1.428em;
-    border: none;
-    color: #232331; }
-    .option-group .container ul li a:hover {
-      outline: none;
+  .option-group .container .tab-content {
+    margin-top: 135px;
+    margin-bottom: 77px; }
+    .option-group .container .tab-content h3 {
+      font-size: 1.285em;
+      font-family: "titillium_websemibold";
+      text-align: center;
+      padding-top: 5px;
+      margin-top: 13px; }
+  .option-group .container ul {
+    border-bottom: 1 solid #e6e6e6;
+    padding: 0px 400px 0px 450px; }
+    .option-group .container ul .active {
       border: none;
-      background: none; }
+      border-bottom: 4px solid #d83737; }
+      .option-group .container ul .active a {
+        color: #d83737; }
+        .option-group .container ul .active a:focus {
+          outline: none;
+          border: none; }
+    .option-group .container ul li a {
+      font-family: "titillium_webbold";
+      font-size: 1.428em;
+      border: none;
+      color: #232331; }
+      .option-group .container ul li a:hover {
+        outline: none;
+        border: none;
+        background: none; }
 
 .group-collapse {
   background-color: #232331; }
   .group-collapse .container {
-    padding-top: 40px; }
+    padding-top: 40px;
+    padding-bottom: 154px; }
     .group-collapse .container h2 {
       font-family: "titillium_websemibold";
       font-size: 2.142em;
       color: #ffffff;
       text-align: center;
-      text-transform: uppercase; }
+      text-transform: uppercase;
+      margin-top: 28px; }
+    .group-collapse .container .panel-group {
+      padding-top: 22px; }
     .group-collapse .container .panel-default {
       border: none;
       border-radius: 0px;
-      margin: 0px; }
+      margin: 0px;
+      border-bottom: 1px solid #57576e; }
       .group-collapse .container .panel-default .panel-body {
         background-color: #232331;
-        border: none; }
+        border: none;
+        padding-top: 10px;
+        padding-bottom: 22px; }
         .group-collapse .container .panel-default .panel-body p {
           font-family: "titillium_webregular";
           font-size: 1.071em;
           color: #57576e;
-          margin-bottom: 3px; }
+          margin-bottom: 6px; }
   .group-collapse .panel-heading {
     background: none;
     background-color: #232331;
-    border-radius: 0px; }
+    border-radius: 0px;
+    padding-top: 19px;
+    padding-bottom: 29px; }
+    .group-collapse .panel-heading .collapse-first {
+      color: #d83737; }
+      .group-collapse .panel-heading .collapse-first i {
+        color: #d83737;
+        border: 2px solid #d83737; }
     .group-collapse .panel-heading a {
       color: #fff;
-      font-family: "titillium_websemibold";
+      height: 32px;
+      width: 32px;
       font-size: 1.428em;
-      padding-left: 5px; }
+      font-family: "titillium_websemibold"; }
       .group-collapse .panel-heading a:focus {
         color: #d83737;
         text-decoration: none;
@@ -540,75 +614,91 @@ a {
           color: #d83737;
           border: 2px solid #d83737; }
       .group-collapse .panel-heading a i {
-        font-size: 0.857em;
-        padding-right: 5px;
-        padding-bottom: 2px;
-        padding-left: 5px;
+        line-height: 10px;
+        font-size: 0.714em;
         color: #fff;
         border-radius: 360px;
         border: 2px solid #fff;
-        padding: 4px 4px 5px 4px; }
+        padding: 4.3px 4px 3.6px 4px;
+        margin-right: 8px; }
+    .group-collapse .panel-heading .collapsed {
+      color: #fff; }
+      .group-collapse .panel-heading .collapsed i {
+        color: #fff;
+        border: 2px solid #fff; }
 
-.information .container {
-  margin-top: 40px; }
 .information .col-md-3 {
-  top: 26px; }
+  top: 24px; }
 .information .section-right {
-  border-left: 1px solid #e5e0e0; }
+  border-left: 1px solid #e5e0e0;
+  padding-left: 64px; }
   .information .section-right .title-content {
     border: 1px solid #dddde2;
     margin-bottom: 5px; }
   .information .section-right .media {
-    margin-top: 10px;
-    margin-bottom: 10px; }
+    margin-top: 8px;
+    margin-bottom: 8px; }
+  .information .section-right .media-body {
+    padding-left: 0px; }
   .information .section-right img {
-    margin-left: 10px; }
+    margin-left: 8px;
+    width: 48px;
+    height: 36px;
+    border-radius: 2px; }
+  .information .section-right .list-title {
+    margin-top: 65px; }
 .information .section-left .media-first {
-  margin-bottom: 40px; }
+  margin-bottom: 40px;
+  margin-top: 65px; }
 .information .section-left img {
-  height: 210px;
-  width: 280px; }
-.information .col-md-6 h3 {
-  font-family: "titillium_websemibold";
-  font-size: 2.142em;
-  color: #232331; }
-.information .col-md-6 .seemore {
-  float: left;
-  font-family: "titillium_websemibold";
-  font-size: 1em;
-  color: #888888; }
-  .information .col-md-6 .seemore:hover {
-    border: none;
-    background: none;
-    outline: none;
-    color: red;
-    text-decoration: none; }
-    .information .col-md-6 .seemore:hover i {
+  height: 159px;
+  width: 270px; }
+.information .col-md-6 {
+  padding-top: 50px;
+  padding-bottom: 70px; }
+  .information .col-md-6 h3 {
+    font-family: "titillium_websemibold";
+    font-size: 2.142em;
+    color: #232331; }
+  .information .col-md-6 .seemore {
+    float: left;
+    font-family: "titillium_websemibold";
+    font-size: 1em;
+    color: #888888; }
+    .information .col-md-6 .seemore:hover {
+      border: none;
+      background: none;
+      outline: none;
       color: red;
-      border: 2px solid red; }
-  .information .col-md-6 .seemore:focus {
-    border: none;
-    background: none;
-    outline: none; }
-  .information .col-md-6 .seemore i {
-    font-size: 0.857em;
-    padding-right: 5px;
-    padding-bottom: 2px;
-    padding-left: 5px;
-    color: #888888;
-    border-radius: 360px;
-    border: 2px solid #888888;
-    padding: 5px 6px 5px 7px;
-    font-size: 0.857em;
-    margin-right: 8px; }
+      text-decoration: none; }
+      .information .col-md-6 .seemore:hover i {
+        color: red;
+        border: 2px solid red; }
+    .information .col-md-6 .seemore:focus {
+      border: none;
+      background: none;
+      outline: none; }
+    .information .col-md-6 .seemore i {
+      font-size: 0.857em;
+      padding-right: 5px;
+      padding-bottom: 2px;
+      padding-left: 5px;
+      color: #888888;
+      border-radius: 360px;
+      border: 2px solid #888888;
+      padding: 5px 6px 5px 7px;
+      font-size: 0.857em;
+      margin-right: 8px; }
 .information .content {
   padding-left: 10px; }
   .information .content h4 {
-    margin-bottom: 10px;
+    margin-bottom: 0px;
     font-family: "titillium_websemibold";
     font-size: 1.071em;
-    color: #3e3e48; }
+    color: #3e3e48;
+    margin-top: 0px; }
   .information .content p {
+    margin-top: 0px;
     margin-bottom: 0px;
     font-family: "titillium_webregular";
     font-size: 1em;
@@ -616,7 +706,11 @@ a {
   .information .content h2 {
     font-family: "titillium_websemibold";
     font-size: 1.428em;
-    color: #d83737; }
+    color: black;
+    margin-top: 0px;
+    margin-bottom: 16px; }
+    .information .content h2:hover {
+      color: #d83737; }
   .information .content a {
     font-family: "titillium_websemibold";
     font-size: 0.857em;
@@ -628,7 +722,7 @@ a {
       color: blue;
       border: 1px solid blue; }
   .information .content span {
-    padding-left: 4px;
+    padding-left: 8px;
     color: #bbbbbb;
     font-family: "titillium_websemibold";
     font-size: 12px; }
@@ -639,7 +733,7 @@ a {
   position: relative; }
   .information .title-content .col-md-4 .star {
     position: absolute;
-    top: 10px;
+    top: 9px;
     right: 20px; }
     .information .title-content .col-md-4 .star:hover {
       outline: none; }
@@ -648,16 +742,16 @@ a {
   .information .title-content .col-md-4 .review {
     position: absolute;
     right: 20px;
-    top: 30px;
+    top: 25px;
     font-family: "titillium_websemibold";
     font-size: 0.857em;
     color: #b5b5b5; }
 
 .tab-bottom {
   background-image: url("../images/banner-2.png");
-  height: 500px;
-  background-color: #252531;
-  margin-top: 20px; }
+  height: 604px;
+  background-repeat: no-repeat;
+  background-color: #252531; }
   .tab-bottom ul {
     border: none; }
   .tab-bottom .row {
@@ -680,17 +774,23 @@ a {
     top: -20px;
     padding: 0px; }
   .tab-bottom .col-md-8 {
-    padding: 0px; }
+    padding: 0px;
+    padding-left: 5px;
+    font-family: "titillium_webregular";
+    font-size: 1em; }
     .tab-bottom .col-md-8 h4 {
       font-family: "titillium_websemibold";
       font-size: 1.428em; }
   .tab-bottom .tag2 {
     text-align: center;
-    margin-left: 490px; }
+    margin-left: 490px;
+    padding-top: 10px; }
   .tab-bottom .tag1 {
-    padding-left: 122px; }
+    padding-left: 122px;
+    padding-top: 10px; }
   .tab-bottom .tag3 {
-    margin-right: 62px; }
+    margin-right: 62px;
+    padding-top: 10px; }
   .tab-bottom li {
     width: 365px;
     height: auto;
@@ -702,9 +802,9 @@ a {
     font-size: 2.142em;
     color: #ffffff;
     text-align: center;
-    padding-top: 30px; }
-  .tab-bottom .overtab {
-    margin-top: 60px; }
+    margin-top: 38px; }
+  .tab-bottom .over-tab {
+    padding-top: 62px; }
   .tab-bottom .active {
     background: none; }
     .tab-bottom .active h4 {
@@ -733,7 +833,9 @@ a {
   position: fixed;
   z-index: 999;
   top: 35%;
-  right: 0px; }
+  right: 20px; }
+  .form-toolbar .nav > li > a:focus {
+    background-color: #232331; }
   .form-toolbar li {
     margin-bottom: 5px; }
     .form-toolbar li:hover a {
@@ -741,11 +843,11 @@ a {
       .form-toolbar li:hover a i {
         color: #c8060c; }
     .form-toolbar li .toolbar-signin, .form-toolbar li .toolbar-desktop, .form-toolbar li .toolbar-phone, .form-toolbar li .toolbar-review {
-      width: 50px;
-      height: 50px;
+      width: 43px;
+      height: 43px;
       border-radius: 360px;
       background-color: #232331;
-      padding: 15px 12px 10px 20px;
+      padding: 11px 0px 0px 16px;
       top: 0px; }
       .form-toolbar li .toolbar-signin i, .form-toolbar li .toolbar-desktop i, .form-toolbar li .toolbar-phone i, .form-toolbar li .toolbar-review i {
         font-size: 1em;
@@ -754,18 +856,27 @@ a {
         width: 14px;
         height: 14px; }
     .form-toolbar li .toolbar-desktop {
-      padding: 15px 15px 8px 18px; }
+      padding: 13px 0px 0px 14px; }
     .form-toolbar li .toolbar-phone {
-      padding: 17px 10px 6px 20px; }
+      padding: 14px 0px 0px 16.5px; }
       .form-toolbar li .toolbar-phone i {
         font-size: 1.714em; }
     .form-toolbar li .toolbar-review {
-      padding: 12px 12px 10px 18px; }
+      padding: 10px 0px 0px 15px; }
 
 .information-contact {
   background-color: #fafafa; }
+  .information-contact h2 {
+    font-family: "titillium_websemibold";
+    font-size: 2.142em;
+    text-align: center;
+    color: 232331;
+    margin-bottom: 82px; }
+  .information-contact .first-line {
+    margin-bottom: 38px; }
   .information-contact .container {
-    padding-top: 40px; }
+    padding-top: 44px;
+    margin-bottom: 142px; }
   .information-contact .information-over {
     margin-left: 16px; }
   .information-contact .col-md-4 {
@@ -775,24 +886,47 @@ a {
     padding-left: 35px; }
     .information-contact .col-md-4 .col-md-10 {
       padding: 0px; }
-  .information-contact .form-group .form-control {
-    border-radius: 0px;
-    font-family: "titillium_webregular";
-    font-size: 1em; }
-  .information-contact .discription .form-control {
-    border-radius: 0px;
-    font-family: "titillium_webregular";
-    font-size: 1em; }
+  .information-contact form {
+    margin-top: 28px; }
+  .information-contact .form-group {
+    margin-bottom: 12px; }
+    .information-contact .form-group .form-control {
+      border-radius: 0px;
+      font-family: "titillium_webregular";
+      font-size: 1em;
+      width: 370px; }
+  .information-contact .discription {
+    width: 370px;
+    height: 102px; }
+    .information-contact .discription .form-control {
+      border-radius: 0px;
+      font-family: "titillium_webregular";
+      font-size: 1em; }
   .information-contact .col-md-8 {
-    padding-left: 100px; }
+    padding-left: 100px;
+    position: relative;
+    z-index: 1;
+    margin-left: -40px; }
+  .information-contact .border {
+    position: absolute;
+    z-index: 3;
+    height: 515px;
+    left: -41px; }
+  .information-contact iframe {
+    position: absolute;
+    z-index: 2;
+    height: 450px;
+    top: 40px;
+    width: 775px; }
   .information-contact .button-bottom {
-    margin-top: 10px;
+    margin-top: 4px;
     background-color: #d83737;
     padding: 30px 25px;
     border-radius: 0px;
     color: white;
     font-family: "titillium_websemibold";
-    font-size: 1.285em; }
+    font-size: 1.285em;
+    margin-right: -42px; }
     .information-contact .button-bottom:hover {
       background-color: #B02020; }
 

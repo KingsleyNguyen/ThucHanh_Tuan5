@@ -42,7 +42,8 @@
         </div>
       </header>
       <section id="slideshow" class="slideshow">
-          <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+         <div class="container-fluid">
+            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
             <!-- Indicators 
             <ol class="carousel-indicators">
               <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
@@ -98,10 +99,11 @@
                 </div>  
  
                 <div class="btn-right">
-                  <a title="" class="left carousel-control" href="#carousel-example-generic" data-slide="prev"><i class="fa fa-angle-right"></i>  
+                  <a title="" class="right carousel-control" href="#carousel-example-generic" data-slide="prev"><i class="fa fa-angle-right"></i>  
                 </a> 
                 </div>  
           </div>
+         </div>
       </section>
 
       <section id="textform" class="textform">
@@ -289,12 +291,16 @@
                   </div>
                   
               </div><!--end carousel slide-->
-                  <a title="" class="left carousel-control" href="#carousel-generic1" data-slide="prev">  
-                    <i class="fa fa-angle-left"></i>  
-                  </a>  
-                  <a title="" class="right carousel-control" href="#carousel-generic1" data-slide="next">  
-                    <i class="fa fa-angle-right"></i>  
-                  </a> 
+                <!-- Controls -->
+                <div class="btn-left">
+                  <a title="" class="left carousel-control" href="#carousel-generic1" data-slide="prev"><i class="fa fa-angle-left"></i>  
+                </a> 
+                </div>  
+ 
+                <div class="btn-right">
+                  <a title="" class="right carousel-control" href="#carousel-generic1" data-slide="prev"><i class="fa fa-angle-right"></i>  
+                </a> 
+                </div> 
           </div>
       </section>
       <section id="option-group" class="option-group">
@@ -420,7 +426,8 @@
             <div class="panel panel-default">
               <div class="panel-heading" role="tab" id="headingOne">
                 <h4 class="panel-title active">
-                  <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne"><i class="fa fa-chevron-down"></i>
+                  <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne" class="collapse-first"><i class="fa fa-angle-down" aria-hidden="true"></i>
+
                   Collapse 1
                   </a>
                 </h4>
@@ -441,7 +448,8 @@
             <div class="panel panel-default">
               <div class="panel-heading" role="tab" id="headingTwo">
                 <h4 class="panel-title">
-                 <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"><i class="fa fa-chevron-down"></i>
+                 <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"><i class="fa fa-angle-down" aria-hidden="true"></i>
+
                     Collapse 2
                   </a>
                 </h4>
@@ -462,7 +470,8 @@
             <div class="panel panel-default">
               <div class="panel-heading" role="tab" id="headingThree">
                 <h4 class="panel-title">
-                  <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree"><i class="fa fa-chevron-down"></i>
+                  <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree"><i class="fa fa-angle-down" aria-hidden="true"></i>
+
                    Collapse 3
                   </a>
                 </h4>
@@ -706,9 +715,10 @@
     </section>
       <section id="information-contact" class="information-contact">
         <div class="container">
+        <h2>Title-h2</h2>
           <div class="row information-over">
             <div class="col-md-4">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit fuga, consequatur veritatis iste magnam ea esse expedita cupiditate rerum.</p>
+              <p class="first-line">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit fuga, consequatur veritatis iste magnam ea esse expedita cupiditate rerum.</p>
               <div class="row">
                 <div class="col-md-2"><p>Adress</p></div>
                 <div class="col-md-10"><p> Alexander Street. Vancouver, 1E1 Canada</p></div>
@@ -739,7 +749,7 @@
                 <button type="submit" class="btn button-bottom pull-right">Send</button>
             </form>
             </div>
-            <div class="col-md-8"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.273594504233!2d106.64065651398806!3d10.790345061889154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752eb293131bf3%3A0x4269c937878efcea!2zNjQgQsOgdSBDw6F0IDYsIFTDom4gQsOsbmgsIEjhu5MgQ2jDrSBNaW5oLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1459767522142" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></div>
+            <div class="col-md-8"><img class="border" src="./images/border.png" alt=""><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.273594504233!2d106.64065651398806!3d10.790345061889154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752eb293131bf3%3A0x4269c937878efcea!2zNjQgQsOgdSBDw6F0IDYsIFTDom4gQsOsbmgsIEjhu5MgQ2jDrSBNaW5oLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1459767522142" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></div>
           </div>
         </div>
       </section>

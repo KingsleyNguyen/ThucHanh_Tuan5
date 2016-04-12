@@ -2,7 +2,10 @@
 	position:fixed;
 	z-index:999;
 	top:35%;
-	right:0px;
+	right:20px;
+	.nav > li > a:focus{
+		background-color:#232331;
+	}
 	li{
 		margin-bottom:5px;
 		&:hover{
@@ -14,11 +17,11 @@
 			}
 		}
 		.toolbar-signin{
-			width:50px;
-			height:50px;
+			width:43px;
+			height:43px;
 			border-radius:360px;
 			background-color:#232331;
-			padding:15px 12px 10px 20px;
+			padding:11px 0px 0px 16px;
 			top:0px;
 
 			i{
@@ -31,25 +34,36 @@
 		}
 		.toolbar-desktop{
 			@extend .toolbar-signin;
-			padding:15px 15px 8px 18px;
+			padding:13px 0px 0px 14px;
 		}
 		.toolbar-phone{
 			@extend .toolbar-signin;
 			i{
 				font-size:$fontsize-24;
 			}
-			padding:17px 10px 6px 20px;
+			padding:14px 0px 0px 16.5px;
 		}
 		.toolbar-review{
 			@extend .toolbar-signin;
-			padding:12px 12px 10px 18px;
+			padding:10px 0px 0px 15px;
 		}		
 	}
 }
 .information-contact{
+	h2{
+		font-family:$font-primary;
+		font-size:$fontsize-30;
+		text-align:center;
+		color:232331;
+		margin-bottom:82px;
+	}
+	.first-line{
+		margin-bottom:38px;
+	}
 	background-color:#fafafa;
 	.container{
-		padding-top:40px;
+		padding-top:44px;
+		margin-bottom:142px;
 	}
 	.information-over{
 		margin-left:16px;
@@ -63,11 +77,16 @@
 			padding:0px;
 		}
 	}
+	form{
+		margin-top:28px;
+	}
 	.form-group{
+		margin-bottom:12px;
 		.form-control{
 			border-radius:0px;
 			font-family:$font-third;
 			font-size:$fontsize-14;
+			width:370px;
 		}
 	}
 	.discription{
@@ -76,18 +95,37 @@
 			font-family:$font-third;
 			font-size:$fontsize-14;
 		}
+		width:370px;
+		height:102px;
 	}
 	.col-md-8{
 		padding-left:100px;
+		position:relative;
+		z-index: 1;
+		margin-left:-40px;
+	}
+	.border{
+		position:absolute;
+		z-index: 3;
+		height:515px;
+		left:-41px;
+	}
+	iframe{
+		position:absolute;
+		z-index:2;
+		height:450px;
+		top:40px;
+		width:775px;
 	}
 	.button-bottom{
-		margin-top:10px;
+		margin-top:4px;
 		background-color:#d83737;
 		padding:30px 25px;
 		border-radius:0px;
 		color:white;
 		font-family:$font-primary;
 		font-size:$fontsize-18;
+		margin-right: -42px;
 		&:hover{
 			background-color:#B02020;
 		}

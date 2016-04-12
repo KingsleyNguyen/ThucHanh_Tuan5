@@ -2,18 +2,23 @@
 	background-color:#232331;
 	margin-top:30px;
 	.container{
-		padding-top:30px;
+		padding-top:60px;
+		padding-bottom:60px;
 	}
 	h3{
 		font-family:$font-primary;
 		font-size:$fontsize-20;
 		color:#bbbbbb;
 		padding-bottom:20px;
+		margin-bottom: 53px;
 	}
 	p{
 		font-family:$font-primary;
 		font-size:$fontsize-14;
 		color:#57576e;		
+	}
+	.form-group{
+		margin-top:32px;
 	}
 	.txtemail{
 		border-radius:0px;
@@ -22,6 +27,9 @@
 		position:relative;
 		background-color:#1f1f2d;
 		border:1px solid #31313e;
+		&:hover{
+			box-shadow:none;
+		}
 	}
 	.btn{
 		margin-top:-35px;
@@ -47,9 +55,9 @@
 	border-top:1px solid #57576e;
 	background-color:#232331;
 	.container{
-		padding-top:10px;
+		padding-top:28px;
 		text-align:center;
-		padding-bottom:10px;		
+		padding-bottom:28px;		
 	}
 	span{
 		font-family:$font-third;
